@@ -18,8 +18,8 @@ function getData(url) {
 }
 
 // 食用米抽檢不合個產品 url
-
 const url = 'https://data.moa.gov.tw/Service/OpenData/FromM/AgricultureiRiceFailure.aspx';
+
 getData(url).then(data => console.log(data))
             .catch(error => console.log(error))
 console.log('finish')
