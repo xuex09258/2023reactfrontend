@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
+import JSX0 from '../jsx/JSX0';
+
 function Home() {
     return <h2>Home Page</h2>
 }
@@ -22,6 +24,7 @@ function NavRouter() {
                     <li style={{cursor: 'pointer'}}><Link to="/">Home</Link></li>
                     <li style={{cursor: 'pointer'}}><Link to="/profile">Profile</Link></li>
                     <li style={{cursor: 'pointer'}}><Link to="/settings">Settings</Link></li>
+                    <li><Link to="/JSX0">JSX0 basic</Link></li>
                 </ul>
             </nav>
             {/* 右邊內容 */}
@@ -30,6 +33,7 @@ function NavRouter() {
                     <Route path="/" element={<Home />} />
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/settings" element={<Settings />} />
+                    <Route path="/JSX0" element={<JSX0 />} />
                 </Routes>
             </main>
         </div>
