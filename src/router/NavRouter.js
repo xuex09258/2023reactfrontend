@@ -5,6 +5,8 @@ import JSX0 from '../jsx/JSX0';
 import JSXShoppingDemo from '../jsx/JSXShoppingDemo';
 import JSXFinanceDemo from '../jsx/JSXFinanceDemo'
 import PersonalExpenseTracker from '../jsx/PersonalExpenseTracker';
+//自訂組件
+import JSXMenuListSpicyDemo from "../jsx/JSXMenuListSpicyDemo";
 
 function Home() {
     return <h2>Home Page</h2>
@@ -34,6 +36,8 @@ function NavRouter() {
                     <li><Link to="/JSXShoppingDemo">JSX Shopping Demo</Link></li>
                     <li><Link to="/JSXFinanceDemo">JSX Finance Demo</Link></li>
                     <li><Link to="/PersonalExpenseTracker">Personal Expense Tracker</Link></li>
+                    JSX 自訂組件
+                    <li><Link to="/JSXMenuListSpicyDemo">JSX MenuList Spicy Demo</Link></li>
                 </ol>
             </nav>
             {/* 右邊內容 */}
@@ -47,6 +51,9 @@ function NavRouter() {
                     <Route path="/JSXShoppingDemo" element={<JSXShoppingDemo />} />
                     <Route path="/JSXFinanceDemo" element={<JSXFinanceDemo />} />
                     <Route path="/PersonalExpenseTracker" element={<PersonalExpenseTracker />} />
+                    {/* JSX自訂組件 */}
+                    <Route path="/JSXMenuListSpicyDemo" element={<JSXMenuListSpicyDemo />} />
+
                 </Routes>
             </main>
         </div>
