@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 // JSX
 import JSX0 from '../jsx/JSX0';
 import JSXShoppingDemo from '../jsx/JSXShoppingDemo';
@@ -12,6 +12,7 @@ import JSXDangerousDemo from "../jsx/JSXDangerousDemo";
 import JSXShoppingCartPropsDemo from "../jsx/JSXShoppingCartPropsDemo"
 // Form & List
 import Form1 from "../form_list/form/Form1";
+import Form2 from "../form_list/form/Form2";
 
 function Home() {
     return <h2>Home Page</h2>
@@ -50,7 +51,7 @@ function NavRouter() {
                 <ol>
                     Form
                     <li><Link to="/Form1">Form1</Link></li>
-                    
+                    <li><Link to="/Form2">Form2</Link></li>
 
                 </ol>
             </nav>
@@ -72,6 +73,7 @@ function NavRouter() {
                     <Route path="/JSXShoppingCartPropsDemo" element={<JSXShoppingCartPropsDemo />} />
                     {/* Form & List */}
                     <Route path="/Form1" element={<Form1 />} />
+                    <Route path="/Form2" element={<Form2 />} />
                 </Routes>
             </main>
         </div>
