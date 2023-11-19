@@ -10,6 +10,8 @@ import JSXMenuListDemo from "../jsx/JSXMenuListDemo";
 import JSXMenuListSpicyDemo from "../jsx/JSXMenuListSpicyDemo";
 import JSXDangerousDemo from "../jsx/JSXDangerousDemo";
 import JSXShoppingCartPropsDemo from "../jsx/JSXShoppingCartPropsDemo"
+// Form & List
+import Form1 from "../form_list/form/Form1";
 
 function Home() {
     return <h2>Home Page</h2>
@@ -45,6 +47,12 @@ function NavRouter() {
                     <li><Link to="/JSXDangerousDemo">JSX Dangerous Demo</Link></li>
                     <li><Link to="/JSXShoppingCartPropsDemo">JSX Shopping Cart Props Demo</Link></li>
                 </ol>
+                <ol>
+                    Form
+                    <li><Link to="/Form1">Form1</Link></li>
+                    
+
+                </ol>
             </nav>
             {/* 右邊內容 =================================================================*/}
             <main style={{flex: 1, padding: '1rem'}}>
@@ -62,7 +70,8 @@ function NavRouter() {
                     <Route path="/JSXMenuListSpicyDemo" element={<JSXMenuListSpicyDemo />} />
                     <Route path="/JSXDangerousDemo" element={<JSXDangerousDemo />} />
                     <Route path="/JSXShoppingCartPropsDemo" element={<JSXShoppingCartPropsDemo />} />
-
+                    {/* Form & List */}
+                    <Route path="/Form1" element={<Form1 />} />
                 </Routes>
             </main>
         </div>
