@@ -10,6 +10,12 @@ import JSXMenuListDemo from "../jsx/JSXMenuListDemo";
 import JSXMenuListSpicyDemo from "../jsx/JSXMenuListSpicyDemo";
 import JSXDangerousDemo from "../jsx/JSXDangerousDemo";
 import JSXShoppingCartPropsDemo from "../jsx/JSXShoppingCartPropsDemo"
+//component
+import Function0 from "../component/Function0";
+import FuncApp from "../component/FuncApp";
+import Class0 from "../component/Class0";
+import ClassApp from "../component/ClassApp";
+
 // Form & List
 import Form1 from "../form_list/form/Form1";
 import Form2 from "../form_list/form/Form2";
@@ -49,6 +55,14 @@ function NavRouter() {
                     <li><Link to="/JSXShoppingCartPropsDemo">JSX Shopping Cart Props Demo</Link></li>
                 </ol>
                 <ol>
+                    Component
+                    <li><Link to="/Function0">Function0（函數元件basic）</Link></li>
+                    <li><Link to="/FuncApp">FuncApp（函數元件）</Link></li>
+                    <li><Link to="/Class0">Class0（類別元件basic）</Link></li>
+                    <li><Link to="/ClassApp">ClassApp（類別元件）</Link></li>
+                    
+                </ol>
+                <ol>
                     Form
                     <li><Link to="/Form1">Form1</Link></li>
                     <li><Link to="/Form2">Form2</Link></li>
@@ -71,6 +85,11 @@ function NavRouter() {
                     <Route path="/JSXMenuListSpicyDemo" element={<JSXMenuListSpicyDemo />} />
                     <Route path="/JSXDangerousDemo" element={<JSXDangerousDemo />} />
                     <Route path="/JSXShoppingCartPropsDemo" element={<JSXShoppingCartPropsDemo />} />
+                    {/* Component */}
+                    <Route path="/Function0" element={<Function0 />} />
+                    <Route path="/FuncApp" element={<FuncApp />} />
+                    <Route path="/Class0" element={<Class0 />} />
+                    <Route path="/ClassApp" element={<ClassApp />} />
                     {/* Form & List */}
                     <Route path="/Form1" element={<Form1 />} />
                     <Route path="/Form2" element={<Form2 />} />
