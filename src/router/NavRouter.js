@@ -19,6 +19,15 @@ import ClassApp from "../component/ClassApp";
 // Form & List
 import Form1 from "../form_list/form/Form1";
 import Form2 from "../form_list/form/Form2";
+import List from "../form_list/list/List"
+
+//List getjsondata
+import Listgetjsondata from "../form_list/list/Listgetjsondata"
+// Hooks GetJsonData
+import GetJsonData from "../hooks/GetJsonData";
+
+// Hooks
+
 
 function Home() {
     return <h2>Home Page</h2>
@@ -66,7 +75,18 @@ function NavRouter() {
                     Form
                     <li><Link to="/Form1">Form1</Link></li>
                     <li><Link to="/Form2">Form2</Link></li>
-
+                    List
+                    <li><Link to="/List">List</Link></li>
+                    Listgetjsondata
+                    <li><Link to="/Listgetjsondata">List get jsondata</Link></li>
+                </ol>
+                <ol>
+                    2:29分 開始 Hooks GetJsonData 
+                    <li><Link to="/GetJsonData">GetJsonData App</Link></li>
+                </ol>
+                <ol>
+                    50分開始 Hooks 
+                    
                 </ol>
             </nav>
             {/* 右邊內容 =================================================================*/}
@@ -93,6 +113,12 @@ function NavRouter() {
                     {/* Form & List */}
                     <Route path="/Form1" element={<Form1 />} />
                     <Route path="/Form2" element={<Form2 />} />
+                    <Route path="/List" element={<List />} />
+                    {/* Listgetjsondata */}
+                    <Route path="/Listgetjsondata" element={<Listgetjsondata />} />
+                    {/* Hooks GetJsonData*/}    
+                    <Route path="/GetJsonData" element={<GetJsonData />} />
+                    {/* 2:29 Hooks */}
                 </Routes>
             </main>
         </div>
