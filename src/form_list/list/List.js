@@ -1,5 +1,5 @@
 import React from "react";
-import ListUI from "./ListUI";
+import ListUI22 from "./ListUI22";
 
 const finProducts = [
     {id: 1, symbol: '2330.TW', amount: 10},
@@ -13,7 +13,7 @@ const finProducts2 = [
 ];
 
 function List() {
-    return <ListUI
+    return <ListUI22
                    products={finProducts}
             
                    products2={finProducts2}

@@ -1,6 +1,6 @@
 import React from "react";
 
-function ListUI({products}) {
+function ListUI22({products, products2}) {
     
     return (
         <div>
@@ -13,10 +13,16 @@ function ListUI({products}) {
                         </li>
                     ))
                 }
-                
+                {
+                    products2.map((product) => (
+                        <li key={product.id}>
+                            {product.symbol} {product.amount}
+                        </li>
+                    ))
+                }
             </ul>
         </div>
     );
 }
 
-export default ListUI;
+export default ListUI22;

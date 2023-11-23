@@ -26,6 +26,12 @@ import Listgetjsondata from "../form_list/list/Listgetjsondata"
 // Hooks GetJsonData
 import GetJsonData from "../hooks/GetJsonData";
 
+// FormANDList
+import FormAndList from "../form_list/FormAndList";
+
+// Update
+import Counter from "../update/Counter";
+
 // Hooks
 
 
@@ -85,6 +91,14 @@ function NavRouter() {
                     <li><Link to="/GetJsonData">GetJsonData App</Link></li>
                 </ol>
                 <ol>
+                    FormANDList 
+                    <li><Link to="/FormAndList">Form and List</Link></li>
+                </ol>
+                <ol>
+                    Update(函數/物件式更新 用Hooks說明)
+                    <li><Link to="/Counter">Counter</Link></li>
+                </ol>
+                <ol>
                     50分開始 Hooks 
                     
                 </ol>
@@ -116,9 +130,13 @@ function NavRouter() {
                     <Route path="/List" element={<List />} />
                     {/* Listgetjsondata */}
                     <Route path="/Listgetjsondata" element={<Listgetjsondata />} />
-                    {/* Hooks GetJsonData*/}    
+                    {/* 2:29 Hooks GetJsonData*/}    
                     <Route path="/GetJsonData" element={<GetJsonData />} />
-                    {/* 2:29 Hooks */}
+                    {/* // FormANDList */}
+                    <Route path="/FormAndList" element={<FormAndList />} />
+                    {/* Update */}
+                    <Route path="/Counter" element={<Counter />} />
+                    {/* Hooks */}
                 </Routes>
             </main>
         </div>
