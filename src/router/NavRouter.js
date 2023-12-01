@@ -39,6 +39,9 @@ import UseStateApp from "../hooks/UseStateApp";
 import UseEffectApp from "../hooks/UseEffectApp";
 import UseEffect2App from "../hooks/UseEffect2App";
 
+// Lab1
+import FinApp from "../lab1/FinApp";
+
 // 置頂元件
 function ScrollToTop() {
     const location = useLocation();
@@ -120,6 +123,10 @@ function NavRouter() {
                     <li><Link to="/UseEffectApp">UseEffect App</Link></li>
                     <li><Link to="/UseEffect2App">UseEffect2 App</Link></li>
                 </ol>
+                <ol>
+                    Lab
+                    <li><Link to="/FinApp">FinApp</Link></li>
+                </ol>
             </nav>
             {/* 右邊內容 =================================================================*/}
             <main style={{flex: 1, padding: '1rem'}}>
@@ -158,6 +165,8 @@ function NavRouter() {
                     <Route path="/UseStateApp" element={<UseStateApp />} />
                     <Route path="/UseEffectApp" element={<UseEffectApp />} />
                     <Route path="/UseEffect2App" element={<UseEffect2App />} />
+                    {/* Lab */}
+                    <Route path="/FinApp" element={<FinApp />} />
                 </Routes>
             </main>
         </div>
