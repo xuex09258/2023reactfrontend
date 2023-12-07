@@ -2,15 +2,15 @@ import React from "react";
 
 import { StockProvider } from "./StockProvider";
 import StockTradingApp from "./StockTradingApp";
-import ErrorBoundary from "./ErrorBoundry";
+//import ErrorBoundary from "./ErrorBoundry";
 
 function FinApp() {
     return (
-        <ErrorBoundary>
+        
             <StockProvider>
                 <StockTradingApp />
             </StockProvider>
-        </ErrorBoundary>
+        
     );
 }
 
