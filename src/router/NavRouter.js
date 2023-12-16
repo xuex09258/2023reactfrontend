@@ -41,6 +41,9 @@ import UseEffect2App from "../hooks/UseEffect2App";
 
 // Lab1
 import FinApp from "../lab1/FinApp";
+// Lab2
+import PriceApp11 from "../lab2/PriceApp11";
+import PriceApp from "../lab2/PriceApp";
 
 // 置頂元件
 function ScrollToTop() {
@@ -126,6 +129,8 @@ function NavRouter() {
                 <ol>
                     Lab
                     <li><Link to="/FinApp">FinApp</Link></li>
+                    <li><Link to="/PriceApp11">Price App11</Link></li>
+                    <li><Link to="/PriceApp">Price App</Link></li>
                 </ol>
             </nav>
             {/* 右邊內容 =================================================================*/}
@@ -167,6 +172,8 @@ function NavRouter() {
                     <Route path="/UseEffect2App" element={<UseEffect2App />} />
                     {/* Lab */}
                     <Route path="/FinApp" element={<FinApp />} />
+                    <Route path="/PriceApp11" element={<PriceApp11 />} />
+                    <Route path="/PriceApp" element={<PriceApp />} />
                 </Routes>
             </main>
         </div>
